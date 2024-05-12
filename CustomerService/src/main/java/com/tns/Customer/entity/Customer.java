@@ -1,7 +1,8 @@
 package com.tns.Customer.entity;
-
+@Entity
 public class Customer {
-	
+	@Id
+        @GeneratedValue(strategy= GeneratedType.IDENTITY)
 	private Long id;
 	 private String name;
 	 private String email;
